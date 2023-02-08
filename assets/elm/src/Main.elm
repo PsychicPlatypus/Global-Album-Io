@@ -17,7 +17,9 @@ main =
 
 init : Model
 init =
-    { isDataNav = False }
+    { isDataNav = False
+    , siteName = ""
+    }
 
 
 
@@ -26,6 +28,7 @@ init =
 
 type alias Model =
     { isDataNav : Bool
+    , siteName : String
     }
 
 
@@ -35,6 +38,7 @@ type alias Model =
 
 type Msg
     = ToggleDataNav
+    | ChangeSiteName
 
 
 
@@ -46,6 +50,9 @@ update msg model =
     case msg of
         ToggleDataNav ->
             { model | isDataNav = not model.isDataNav }
+
+        ChangeSiteName ->
+            { model | siteName = "Boobs" }
 
 
 navLinks : String -> String -> Html msg
