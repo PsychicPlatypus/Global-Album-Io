@@ -1,5 +1,11 @@
 # App
 
+## Requirements:
+Elm instalation: https://guide.elm-lang.org/install/elm.html
+
+Elixir instalation: https://elixir-lang.org/install.html
+
+## Running
 To start your Phoenix server:
 
   * Install dependencies with `mix deps.get`
